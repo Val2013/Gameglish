@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./Gameglish.css">
+        <title> Welcome to Gamenglish!</title>
+    </head>
+    <body>
+        <section class="visible" id="first-page" name="first-page">
+        <h1>Welcome to Gameglish!</h1>
+        <h2>Here you will play while you are learning.</h2>
+        <p>Write your name and press start.</p>
+        <input type="text" id="name-player">
+        <p><button id="button-start" onclick="start()">Start</button></p>
+        </section>
+        <section class="invisible" id="second-page">
+            <h1 id="welcome-player"></h1>
+            <h2>Now we can start, You need to click on the dice to know how many spaces you will move.<h2>
+            <img src="https://www.picng.com/upload/dice/png_dice_30474.png" width="15%" onclick="dices()">
+            <div class="wrapper">
+                <div class="container">
+                    <a><img src="file:///C:/Users/VaL/Documents/Programacion/English%20game/button.webp" width=40%></a>
+                    <div class="centered" id="boton1">1</div>
+                </div>
+                <div class="container">
+                    <a><img src="file:///C:/Users/VaL/Documents/Programacion/English%20game/button.webp" width=40%></a>
+                    <div class="centered" id="boton2">2</div>
+                </div>
+                <div class="container">
+                    <a><img src="file:///C:/Users/VaL/Documents/Programacion/English%20game/button.webp" width=40%></a>
+                    <div class="centered" id="boton3">3</div>
+                </div>
+                <div class="container">
+                    <a><img src="file:///C:/Users/VaL/Documents/Programacion/English%20game/button.webp" width=40%></a>
+                    <div class="centered" id="boton4">4</div>
+                </div>
+                <div class="container">
+                    <a><img src="file:///C:/Users/VaL/Documents/Programacion/English%20game/button.webp" width=40%></a>
+                    <div class="centered" id="boton5">5</div>
+                </div>
+            </div>
+            <br>
+        </section>
+        <section class="invisible" id="questions">
+            <h1>Read the question and select the right answered.</h1>
+            <div class="invisible" id="question1">
+                <h2>This is the question number 1</h2>
+                <input type="radio" name="option1" id="options1q1">She say</input>
+                <input type="radio" name="option1" id="options1q2">He say</input>
+                <input type="radio" name="option1" id="options1q3">It say</input>
+                <input type="radio" name="option1" id="options1q4">I say</input>
+                <br>
+                <br>
+                <button id="accept" onclick="moved()">Accept</button>
+                <button id="back" onclick="returned()">Go Back</button>
+                <p id="answered"></p>
+            </div>
+            <div class="invisible" id="question2">
+                <h2>This is the question number 2</h2>
+                <input type="radio" name="option2" id="options2q1">She say</input>
+                <input type="radio" name="option2" id="options2q2">He say</input>
+                <input type="radio" name="option2" id="options2q3">It say</input>
+                <input type="radio" name="option2" id="options2q4">I say</input>
+                <br>
+                <br>
+                <button id="accept" onclick="moved()">Accept</button>
+                <button id="back" onclick="returned()">Go Back</button>
+            </div>
+            <div class="invisible" id="question3">
+                <h2>This is the question number 3</h2>
+                <input type="radio" name="option3" id="options3q1">She say</input>
+                <input type="radio" name="option3" id="options3q2">He say</input>
+                <input type="radio" name="option3" id="options3q3">It say</input>
+                <input type="radio" name="option3" id="options3q4">I say</input>
+                <br>
+                <br>
+                <button id="accept" onclick="moved()">Accept</button>
+                <button id="back" onclick="returned()">Go Back</button>
+            </div>
+            <div class="invisible" id="question4">
+                <h2>This is the question number 4</h2>
+                <input type="radio" name="option4" id="options4q1">She say</input>
+                <input type="radio" name="option4" id="options4q2">He say</input>
+                <input type="radio" name="option4" id="options4q3">It say</input>
+                <input type="radio" name="option4" id="options4q4">I say</input>
+                <br>
+                <br>
+                <button id="accept" onclick="moved()">Accept</button>
+                <button id="back" onclick="returned()">Go Back</button>
+            </div>
+            <div class="invisible" id="question5">
+                <h2>This is the question number 5</h2>
+                <input type="radio" name="option5" id="options5q1">She say</input>
+                <input type="radio" name="option5" id="options5q2">He say</input>
+                <input type="radio" name="option5" id="options5q3">It say</input>
+                <input type="radio" name="option5" id="options5q4">I say</input>
+                <br>
+                <br>
+                <button id="accept" onclick="moved()">Accept</button>
+                <button id="back" onclick="returned()">Go Back</button>
+            </div>
+            <div class="invisible" id="question6">
+                <h2>This is the question number 6</h2>
+                <input type="radio" name="option6" id="options6q1">She say</input>
+                <input type="radio" name="option6" id="options6q2">He say</input>
+                <input type="radio" name="option6" id="options6q3">It say</input>
+                <input type="radio" name="option6" id="options6q4">I say</input>
+                <br>
+                <br>
+                <button id="accept" onclick="moved()">Accept</button>
+                <button id="back" onclick="returned()">Go Back</button>
+            </div>
+        </section>
+        <script src="Gameglish.js"></script>
+    </body>
+</html>
